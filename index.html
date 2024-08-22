@@ -27,7 +27,8 @@
                 extend: {
                     colors: {
                         bodybg: '#F4F4F4',
-                        pricolor: "#ABEF5F"
+                        pricolor: "#ABEF5F",
+                        graytext: '#737373'
                     }
                 }
             }
@@ -116,10 +117,11 @@
     </header>
     <main>
         <!-- About us  -->
-        <section class="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 my-20 gap-10 px-8 lg:px-2 items-center">
+        <section class="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 my-20 gap-10 px-4 lg:px-2 items-center relative">
             <!-- Left Side -->
-            <div class="grid gap-4 ">
-                <div class="btn rounded-full px-4 py-2 bg-white w-fit">
+            <div class="grid justify-between gap-5">
+                <img class="absolute -top-7 -left-10 hidden lg:flex" src="assets/Vector.png" alt="">
+                <div class="btn mx-auto lg:mx-0 rounded-full px-4 py-2 bg-white w-fit">
                     <h4 class="text-base"><i class="fa-solid fa-arrow-right"></i> About Us</h4>
                 </div>
                 <div class="grid gap-2">
@@ -132,10 +134,10 @@
                 <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
                     <div class="w-auto card card-side bg-base-100 ">
                         <figure>
-                            <img class="px-6 w-40 sm:w-auto" src="assets/residential.png" alt="Movie" />
+                            <img class="px-6 w-40 sm:w-auto" src="assets/commercial.png" alt="Movie" />
                         </figure>
                         <div class="card-body pl-1 py-4">
-                            <h2 class="card-title">Residential</h2>
+                            <h2 class="card-title font-bold text-base md:text-lg">Commercial</h2>
                             <p class="text-sm md:text-base">The barn house captivates with its blend of rustic charm and
                                 modern.</p>
                         </div>
@@ -145,7 +147,7 @@
                             <img class="px-6 w-40 sm:w-auto" src="assets/residential.png" alt="Movie" />
                         </figure>
                         <div class="card-body pl-1 py-4">
-                            <h2 class="card-title">Residential</h2>
+                            <h2 class="card-title font-bold text-base md:text-lg">Residential</h2>
                             <p class="text-sm md:text-base">The barn house captivates with its blend of rustic charm and
                                 modern.</p>
                         </div>
@@ -158,6 +160,51 @@
                 <img class="mx-auto w-full h-[250px] sm:h-[385px] lg:h-auto lg:w-auto" src="assets/Rectangle.png" alt="">
             </div>
         </section>
+
+        <!-- Client  Stat -->
+         <section class="px-5">
+            <div class="max-w-screen-xl mx-auto my-20  p-8 bg-white rounded-3xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+                <div class="grid gap-2 mx-auto text-center">
+                    <div>
+                        <i class="fa-brands fa-rocketchat fa-xl" style="color: #737373;"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-4xl text-gray-600 font-[900]">235+</h1>
+                    <p class="text-base text-graytext">Happy Client Review</p>
+                    </div>
+                </div>
+    
+                <div class="grid gap-2 mx-auto text-center">
+                    <div>
+                        <i class="fa-solid fa-building fa-xl" style="color: #737373;"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-4xl text-gray-600 font-[900]">50+</h1>
+                    <p class="text-base text-graytext">Work Departments</p>
+                    </div>
+                </div>
+    
+                <div class="grid gap-2 mx-auto text-center">
+                    <div>
+                        <i class="fa-solid fa-user-group fa-xl" style="color: #737373;"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-4xl text-gray-600 font-[900]">30k+</h1>
+                    <p class="text-base text-graytext">Our Happy Client</p>
+                    </div>
+                </div>
+    
+                <div class="grid gap-2 mx-auto text-center">
+                    <div>
+                        <i class="fa-solid fa-users fa-xl" style="color: #737373;"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-4xl text-gray-600 font-[900]">307+</h1>
+                    <p class="text-base text-graytext">Staff Members</p>
+                    </div>
+                </div>
+            </div>
+         </section>
 
 
         <!-- Our Work Process -->
@@ -282,7 +329,7 @@
                 <div class="grid gap-5">
                     <div class="grid  justify-between grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5">
                         <div
-                            class="card w-full border-gray-200 border-2  md:col-span-4 lg:col-span-3 grid grid-cols-1 md:grid-cols-[0.5fr_1fr] gap-10 p-5">
+                            class="card w-full mx-auto border-gray-200 border-2 col-span-1  md:col-span-4 lg:col-span-3 grid grid-cols-1 md:grid-cols-[0.5fr_1fr] gap-10 p-5">
                             <img class="w-full m-auto" src="assets/img1.png" alt="">
                             <div class="grid gap-3 text-left">
                                 <h2 class="card-title font-extrabold">Budget Planning</h2>
@@ -294,7 +341,7 @@
                             </div>
                         </div>
                         <div class="card p-5 border-gray-200 border-2 col-span-2 lg:col-span-1">
-                            <img class="m-auto w-full h-full aspect-auto" src="assets/img2.png" alt="">
+                            <img class="m-auto w-full md:h-full aspect-auto" src="assets/img2.png" alt="">
                         </div>
                         <div class="card  p-5 border-gray-200 border-2 col-span-2 lg:col-span-1">
                             <img class="mx-auto w-full aspect-video lg:aspect-auto" src="assets/img3.png" alt="">
