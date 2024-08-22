@@ -55,27 +55,40 @@
                     </ul>
                 </div>
                 <div class="navbar-end flex gap-2">
-                    <div class="flex gap-2">
-                        <button class="btn btn-circle bg-white">
-                            <i class="fa-solid fa-magnifying-glass text-lg bg-white" style="color: #737373;"></i>
-                        </button>
-                        <button class="btn btn-circle bg-white">
-                            <i class="fa-solid fa-cart-shopping text-lg bg-white" style="color: #737373;"></i>
-                        </button>
+                    <div class="hidden sm:flex ">
+                        <div class="flex gap-2">
+                            <button class="btn btn-circle bg-white">
+                                <i class="fa-solid fa-magnifying-glass text-lg bg-white" style="color: #737373;"></i>
+                            </button>
+                            <button class="btn btn-circle bg-white">
+                                <i class="fa-solid fa-cart-shopping text-lg bg-white" style="color: #737373;"></i>
+                            </button>
+                        </div>
+                        <a class="btn btn-secondary bg-pricolor border-none rounded-full text-black font-extrabold px-5">Book
+                            Consult <i class="fa-solid fa-circle-arrow-right fa-rotate-by fa-xl"
+                                style="color: #000000; --fa-rotate-angle: -45deg;"></i></a>
                     </div>
-                    <a class="btn btn-secondary bg-pricolor border-none rounded-full text-black font-extrabold px-5">Book
-                        Consult <i class="fa-solid fa-circle-arrow-right fa-rotate-by fa-xl"
-                            style="color: #000000; --fa-rotate-angle: -45deg;"></i></a>
                     <div class="dropdown dropdown-end">
                         <button class="btn p-2 bg-white lg:hidden">
                             <i class="fa-solid fa-bars text-lg" style="color: #737373;"></i>
                         </button>
-                        <ul tabindex="0" class="z-10 dropdown-content menu bg-white rounded-box w-52 p-2 shadow ">
+                        <ul tabindex="0" class="z-10 dropdown-content menu bg-white rounded-box w-52 p-2 shadow mt-2">
                             <li><a class="font-bold bg-white">Home</a></li>
                             <li><a class=" bg-white">Services</a></li>
                             <li><a class=" bg-white">Portfolio</a></li>
                             <li><a class=" bg-white">Blogs</a></li>
                             <li><a class=" bg-white">Contact Us</a></li>
+                            <div class="flex gap-2 mx-3 sm:hidden">
+                                <button class="btn btn-circle bg-white">
+                                    <i class="fa-solid fa-magnifying-glass text-lg bg-white" style="color: #737373;"></i>
+                                </button>
+                                <button class="btn btn-circle bg-white">
+                                    <i class="fa-solid fa-cart-shopping text-lg bg-white" style="color: #737373;"></i>
+                                </button>
+                            </div>
+                            <a class="btn btn-secondary bg-pricolor border-none rounded-full text-black font-extrabold px-5 mt-2 sm:hidden">Book
+                                Consult <i class="fa-solid fa-circle-arrow-right fa-rotate-by fa-xl"
+                                    style="color: #000000; --fa-rotate-angle: -45deg;"></i></a>
                         </ul>
                     </div>
                 </div>
